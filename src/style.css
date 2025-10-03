@@ -94,3 +94,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* Mode édition : ce qui est .isEditing-visible est caché par défaut */
+.isEditing-visible { display: none; }
+
+/* Quand la ligne est en édition */
+tr.isEditing .isEditing-visible { display: inline-flex; }
+tr.isEditing .isEditing-hidden  { display: none; }
